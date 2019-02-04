@@ -1,3 +1,6 @@
+.border {
+  border: 1px solid red;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -125,4 +128,81 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  color: #4c4c4c;
+  background: #fefff2;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+footer {
+  text-align: center;
+}
+header {
+  padding: 10px 30px 15px 30px;
+  background-color: #f9a03f;
+  color: #4c4c4c;
+}
+.nav {
+  margin: 0 20px;
+}
+.nav h1 {
+  margin: 10px;
+  text-align: center;
+  padding-top: 10px;
+}
+a {
+  font-size: 1.5rem;
+  color: #fefff2;
+  text-decoration: none;
+  margin: 0 20px;
+  padding-top: 0px;
+}
+.nav p {
+  margin: 0 50px;
+  text-align: center;
+}
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.forms {
+  display: flex;
+  margin: 100px 200px;
+}
+.forms img {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  align-self: center;
+}
+.register {
+  width: 100%;
+  padding-left: 200px;
+  text-align: left;
+}
+.register h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+.register input {
+  margin-bottom: 30px;
 }
