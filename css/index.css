@@ -147,12 +147,8 @@ p {
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
-.container {
-  min-width: 480px;
-  margin: 0 auto;
-  width: 100%;
-}
 footer {
+  margin: 50px;
   text-align: center;
 }
 .nav-header {
@@ -160,7 +156,7 @@ footer {
   color: #4c4c4c;
   min-width: 300px;
   width: 100%;
-  padding: 10px 2px;
+  padding: 5px 2px;
 }
 .nav-header h1 {
   margin: 10px;
@@ -179,7 +175,7 @@ footer {
   font-size: 1.5rem;
   color: #fefff2;
   text-decoration: none;
-  margin: 0 5px;
+  margin: 0 5px 0 7px;
   padding: 20px 0;
 }
 nav {
@@ -189,30 +185,32 @@ nav {
 .forms {
   min-width: 300px;
   width: 100%;
+  margin-top: 10px;
+  border-top: 2px solid #c2095a;
 }
 .forms .register {
   display: flex;
-  margin: 0 auto;
+  margin: 0 50px 0 20px;
   width: 100%;
-  flex-direction: column;
-  align-items: center;
+}
+.forms .btn {
+  margin: 65px;
 }
 .forms img {
   width: 100%;
-  margin: 30px 0;
+  margin: 10px 0;
   border-radius: 10px;
   display: block;
 }
-.register {
-  border: 1px solid red;
-  width: 100%;
-  text-align: left;
-  display: flex;
-}
-.register h1 {
-  margin-bottom: 20px;
+.forms h1 {
+  margin: 20px 0;
   font-size: 2.5rem;
 }
-.register input {
+.forms input {
   margin-bottom: 30px;
+}
+.form-top-border {
+  border-top: 2px solid #c2095a;
+  width: 100%;
+  margin: 0 auto;
 }
