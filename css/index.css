@@ -148,56 +148,66 @@ p {
   line-height: 1.5rem;
 }
 .container {
-  max-width: 1280px;
+  min-width: 480px;
   margin: 0 auto;
   width: 100%;
 }
 footer {
   text-align: center;
 }
-header {
-  padding: 10px 30px 15px 30px;
+.nav-header {
   background-color: #f9a03f;
   color: #4c4c4c;
+  min-width: 300px;
+  width: 100%;
+  padding: 10px 2px;
 }
-.nav {
-  margin: 0 20px;
-}
-.nav h1 {
+.nav-header h1 {
   margin: 10px;
   text-align: center;
   padding-top: 10px;
+  padding-bottom: 20px;
 }
-a {
+.nav-header p {
+  padding: 0 30px;
+}
+.nav-header .nav {
+  width: 100%;
+  padding: 20px 0;
+}
+.nav-header .nav a {
   font-size: 1.5rem;
   color: #fefff2;
   text-decoration: none;
-  margin: 0 20px;
-  padding-top: 0px;
-}
-.nav p {
-  margin: 0 50px;
-  text-align: center;
+  margin: 0 5px;
+  padding: 20px 0;
 }
 nav {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
 }
 .forms {
+  min-width: 300px;
+  width: 100%;
+}
+.forms .register {
   display: flex;
-  margin: 100px 200px;
+  margin: 0 auto;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 .forms img {
-  width: 500px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 30px 0;
+  border-radius: 10px;
   display: block;
-  align-self: center;
 }
 .register {
+  border: 1px solid red;
   width: 100%;
-  padding-left: 200px;
   text-align: left;
+  display: flex;
 }
 .register h1 {
   margin-bottom: 20px;
