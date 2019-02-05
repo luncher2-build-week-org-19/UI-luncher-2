@@ -147,14 +147,23 @@ p {
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
+.forms {
+  min-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
 footer {
   margin: 50px;
   text-align: center;
 }
+.nav-container {
+  min-width: 400px;
+  width: 100%;
+}
 .nav-header {
+  min-width: 400px;
   background-color: #f9a03f;
   color: #4c4c4c;
-  min-width: 300px;
   width: 100%;
   padding: 5px 2px;
 }
@@ -169,48 +178,69 @@ footer {
 }
 .nav-header .nav {
   width: 100%;
-  padding: 20px 0;
+  padding: 10px;
+  margin: 0 auto;
 }
 .nav-header .nav a {
+  display: flex;
+  flex-direction: column;
   font-size: 1.5rem;
   color: #fefff2;
   text-decoration: none;
-  margin: 0 5px 0 7px;
-  padding: 20px 0;
-}
-nav {
-  display: flex;
-  flex-wrap: nowrap;
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #c2095a;
+  border-radius: 20px;
+  width: 100%;
 }
 .forms {
-  min-width: 300px;
+  min-width: 400px;
   width: 100%;
   margin-top: 10px;
   border-top: 2px solid #c2095a;
 }
 .forms .register {
   display: flex;
-  margin: 0 50px 0 20px;
+  margin: 0 auto;
   width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
-.forms .btn {
-  margin: 65px;
+.forms .register input {
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border: 1px solid red;
+  border-radius: 10px;
 }
-.forms img {
+img {
   width: 100%;
   margin: 10px 0;
   border-radius: 10px;
   display: block;
 }
-.forms h1 {
+h1 {
   margin: 20px 0;
   font-size: 2.5rem;
 }
-.forms input {
+input {
   margin-bottom: 30px;
 }
 .form-top-border {
   border-top: 2px solid #c2095a;
   width: 100%;
   margin: 0 auto;
+}
+.btn button {
+  width: 100%;
+  background-color: #c2095a;
+  color: #fefff2;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1.5rem;
+  border: none;
+  margin: 10px 0;
 }
