@@ -147,61 +147,56 @@ p {
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
-.forms {
+.container {
   min-width: 500px;
   margin: 0 auto;
   width: 100%;
 }
-footer {
-  margin: 50px auto;
-  text-align: center;
-}
-.nav-container {
-  min-width: 500px;
-  width: 100%;
-}
-@media (min-width: 1000px) {
-  .nav-container {
+@media (min-width: 800px) {
+  .container {
     width: 100%;
   }
 }
-.nav-container .nav-header {
+footer {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+}
+.nav-header {
+  border: 1px solid red;
   min-width: 500px;
   background-color: #f9a03f;
   color: #4c4c4c;
   width: 100%;
-  padding: 5px 2px;
 }
-@media (min-width: 1000px) {
-  .nav-container .nav-header {
+@media (min-width: 800px) {
+  .nav-header {
+    border: 1px solid red;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: flex-end;
     width: 100%;
-    padding: 10px;
+    padding: 1px;
   }
 }
-.nav-container .nav-header h1 {
-  margin: 10px;
+.nav-header h1 {
   text-align: center;
   padding-top: 10px;
 }
-@media (min-width: 1000px) {
-  .nav-container .nav-header h1 {
+@media (min-width: 800px) {
+  .nav-header h1 {
     font-size: 4rem;
     text-align: left;
-    margin: 20px 50px;
+    margin: 20px 100px;
     padding: 20px;
   }
 }
-.nav-container .nav-header .nav {
+.nav-header .nav {
   width: 100%;
-  padding: 10px;
-  margin: 0 auto;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
 }
-.nav-container .nav-header .nav a {
+.nav-header .nav a {
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
@@ -214,10 +209,13 @@ footer {
   border-radius: 20px;
   width: 80%;
 }
-@media (min-width: 1000px) {
-  .nav-container .nav-header .nav a {
+@media (min-width: 800px) {
+  .nav-header .nav a {
+    display: flex;
+    flex-direction: row-reverse;
     width: 100%;
-    padding: 20px 0;
+    padding: 5px 0;
+    margin: 10px auto;
   }
 }
 .registers {
@@ -243,27 +241,31 @@ footer {
   border: none;
   margin: 10px auto;
 }
-img {
+.registers .register .btn .register-top-border {
+  border-top: 2px solid #c2095a;
+  width: 100%;
+  margin: 0 auto 10px auto;
+}
+.registers img {
   width: 100%;
   margin: 10px 0;
   border-radius: 10px;
   display: block;
 }
-h1 {
+@media (min-width: 800px) {
+  .registers img {
+    display: block;
+    width: 50%;
+  }
+}
+.registers h1 {
   margin: 20px 0;
   font-size: 2.5rem;
-}
-input {
-  margin-bottom: 30px;
-}
-.register-top-border {
-  border-top: 2px solid #c2095a;
-  width: 100%;
-  margin: 0 auto 10px auto;
 }
 .form-input form input {
   padding: 10px;
   border: none;
+  margin: 10px auto;
   width: 100%;
   border: 1px solid red;
   border-radius: 10px;
@@ -285,4 +287,10 @@ input {
   font-size: 1.5rem;
   border: none;
   margin: 10px auto;
+}
+.donate {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+  display: block;
 }
