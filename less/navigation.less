@@ -1,8 +1,18 @@
+// Need to find out how to get rid of excess margin to remove horizontal scroll bar
+
+
 // header {}
-.nav-container{
+.nav-container {
     min-width: 400px;
-    width: 100%
-}
+    width: 100%;
+
+    @media @desktop {
+        // display: flex;
+        width: 100%;
+        
+    }
+
+
 .nav-header {
     min-width: 400px;
     background-color: @orange;
@@ -10,21 +20,43 @@
     width: 100%;
     padding: 5px 2px;
 
+    @media @desktop {
+        display: flex;
+        flex-wrap: nowrap;
+        // flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        padding: 10px;
+    }
+
     h1 {
         margin: 10px;
         text-align: center;
         padding-top: 10px;
-        padding-bottom: 20px;
+        // padding-bottom: 0px;
+        @media @desktop {
+            font-size: 4rem;
+            text-align: left;
+            margin: 20px 50px;
+            padding: 20px;
+        }
     }
 
-    p {
-        padding: 0 30px;
-    }
+    // p {
+    //     padding: 0 30px;
+    // }
 
     .nav {
         width: 100%;
         padding: 10px;
         margin: 0 auto;
+
+        @media @desktop {
+            // display: flex;
+            // flex-direction: row;
+            // flex-wrap: nowrap;
+
+        }
 
         a {
             display: flex;
@@ -33,17 +65,28 @@
             color: @offwhite;
             text-decoration: none;
             text-align: center;
-            margin: 20px auto;
+            margin: 10px auto;
             padding: 20px;
             background-color: @red-color;
-            border-radius: 20px; 
-            width: 100%;
+            border-radius: 20px;
+            width: 80%;
+
+            @media @desktop {
+                // display: flex;
+                // flex-direction: row;
+                // flex-wrap: wrap;
+                width: 100%;
+                padding: 20px 0;
+            }
+
         }
     }
 }
+}
 
+// @media @desktop {
 
-
+// }
 
 
 // nav {
