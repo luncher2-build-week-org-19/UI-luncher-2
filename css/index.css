@@ -153,68 +153,95 @@ p {
   width: 100%;
 }
 footer {
-  margin: 50px;
+  margin: 50px auto;
   text-align: center;
 }
 .nav-container {
   min-width: 400px;
   width: 100%;
 }
-.nav-header {
+@media (min-width: 1200px) {
+  .nav-container {
+    width: 100%;
+  }
+}
+.nav-container .nav-header {
   min-width: 400px;
   background-color: #f9a03f;
   color: #4c4c4c;
   width: 100%;
   padding: 5px 2px;
 }
-.nav-header h1 {
+@media (min-width: 1200px) {
+  .nav-container .nav-header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+  }
+}
+.nav-container .nav-header h1 {
   margin: 10px;
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 20px;
 }
-.nav-header p {
-  padding: 0 30px;
+@media (min-width: 1200px) {
+  .nav-container .nav-header h1 {
+    font-size: 4rem;
+    text-align: left;
+    margin: 20px 50px;
+    padding: 20px;
+  }
 }
-.nav-header .nav {
+.nav-container .nav-header .nav {
   width: 100%;
   padding: 10px;
   margin: 0 auto;
 }
-.nav-header .nav a {
+@media (min-width: 1200px) {
+}
+.nav-container .nav-header .nav a {
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
   color: #fefff2;
   text-decoration: none;
   text-align: center;
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 20px;
   background-color: #c2095a;
   border-radius: 20px;
-  width: 100%;
+  width: 80%;
 }
-.forms {
+@media (min-width: 1200px) {
+  .nav-container .nav-header .nav a {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+.registers {
   min-width: 400px;
   width: 100%;
-  margin-top: 10px;
+  margin: 10px auto;
   border-top: 2px solid #c2095a;
 }
-.forms .register {
+.registers .register .btn {
   display: flex;
+}
+.registers .register .btn button {
   margin: 0 auto;
   width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
   padding: 10px;
-}
-.forms .register input {
-  padding: 10px;
+  width: 80%;
+  background-color: #c2095a;
+  color: #fefff2;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 1.5rem;
   border: none;
-  width: 100%;
-  border: 1px solid red;
-  border-radius: 10px;
+  margin: 10px auto;
 }
 img {
   width: 100%;
@@ -229,18 +256,33 @@ h1 {
 input {
   margin-bottom: 30px;
 }
-.form-top-border {
+.register-top-border {
   border-top: 2px solid #c2095a;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
-.btn button {
+.form-input form input {
+  padding: 10px;
+  border: none;
   width: 100%;
+  border: 1px solid red;
+  border-radius: 10px;
+  background-color: #fefff2;
+}
+.form-input form .btn {
+  display: flex;
+}
+.form-input form .btn button {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
   background-color: #c2095a;
   color: #fefff2;
-  border-radius: 10px;
-  padding: 15px;
+  border-radius: 20px;
+  padding: 20px;
   font-size: 1.5rem;
   border: none;
-  margin: 10px 0;
+  margin: 10px auto;
 }
