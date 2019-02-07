@@ -134,10 +134,13 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+body {
+  min-width: 500px;
+  width: 100%;
+}
 html {
   font-size: 62.5%;
   color: #4c4c4c;
-  background: #fefff2;
 }
 h1 {
   font-size: 3rem;
@@ -147,142 +150,48 @@ p {
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
-.forms {
-  min-width: 500px;
-  margin: 0 auto;
-  width: 100%;
-}
 footer {
   margin: 50px auto;
   text-align: center;
+  width: 100%;
 }
 .nav-container {
   min-width: 500px;
   width: 100%;
+  background-image: url("../img/hands-together.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0.9;
 }
-@media (min-width: 1000px) {
-  .nav-container {
-    width: 100%;
-  }
-}
-.nav-container .nav-header {
-  min-width: 500px;
-  background-color: #f9a03f;
-  color: #4c4c4c;
-  width: 100%;
-  padding: 5px 2px;
-}
-@media (min-width: 1000px) {
-  .nav-container .nav-header {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    width: 100%;
-    padding: 10px;
-  }
-}
-.nav-container .nav-header h1 {
-  margin: 10px;
-  text-align: center;
-  padding-top: 10px;
-}
-@media (min-width: 1000px) {
-  .nav-container .nav-header h1 {
-    font-size: 4rem;
-    text-align: left;
-    margin: 20px 50px;
-    padding: 20px;
-  }
-}
-.nav-container .nav-header .nav {
-  width: 100%;
-  padding: 10px;
-  margin: 0 auto;
-}
-@media (min-width: 1000px) {
-}
-.nav-container .nav-header .nav a {
+.nav-header {
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
-  font-size: 1.5rem;
-  color: #fefff2;
-  text-decoration: none;
-  text-align: center;
-  margin: 10px auto;
-  padding: 20px;
-  background-color: #c2095a;
-  border-radius: 20px;
-  width: 80%;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f9a03f;
 }
 @media (min-width: 1000px) {
-  .nav-container .nav-header .nav a {
-    width: 100%;
-    padding: 20px 0;
+  .nav-header {
+    flex-direction: row;
   }
 }
-.registers {
-  min-width: 500px;
-  width: 100%;
-  margin: 10px auto;
-  border-top: 2px solid #c2095a;
-}
-.registers .register .btn {
-  display: flex;
-}
-.registers .register .btn button {
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  width: 80%;
-  background-color: #c2095a;
-  color: #fefff2;
-  border-radius: 20px;
-  padding: 20px;
-  font-size: 1.5rem;
-  border: none;
-  margin: 10px auto;
-}
-img {
-  width: 100%;
-  margin: 10px 0;
-  border-radius: 10px;
-  display: block;
-}
-h1 {
-  margin: 20px 0;
-  font-size: 2.5rem;
-}
-input {
-  margin-bottom: 30px;
-}
-.register-top-border {
-  border-top: 2px solid #c2095a;
-  width: 100%;
-  margin: 0 auto 10px auto;
-}
-.form-input form input {
-  padding: 10px;
-  border: none;
-  width: 100%;
+.nav-header h1 {
   border: 1px solid red;
-  border-radius: 10px;
-  background-color: #fefff2;
+  margin: 50px auto;
 }
-.form-input form .btn {
-  display: flex;
+@media (min-width: 1000px) {
+  .nav-header h1 {
+    margin: 100px;
+  }
 }
-.form-input form .btn button {
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  width: 80%;
-  background-color: #c2095a;
-  color: #fefff2;
-  border-radius: 20px;
-  padding: 20px;
-  font-size: 1.5rem;
-  border: none;
-  margin: 10px auto;
+.nav-header nav {
+  border: 1px solid red;
+  margin: 50px auto;
+}
+@media (min-width: 1000px) {
+  .nav-header nav {
+    margin: 100px;
+    padding-top: 50px;
+  }
 }
