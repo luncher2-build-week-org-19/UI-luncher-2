@@ -1,7 +1,6 @@
 .form-input {
-    form {
-        // display: flex;
-        // flex-direction: column;
+        display: flex;
+        flex-direction: column;
         input {
             padding: 10px;
             border: none;
@@ -11,18 +10,17 @@
             border-radius: 10px;
             background-color: @offwhite;
         }
-
-        .btn {
-            display: flex;
-
+#regSubmit {
+    .custom-btn (100%, @offwhite, 1.5rem);
+}
+        .btn {            
             button {
                 margin: 0 auto;
                 width: 100%;
                 text-align: center;
                 padding: 10px;
-                .custom-btn (80%, @offwhite, 1.5rem);
+                // .custom-btn (80%, @offwhite, 1.5rem); //If using <button> element for submit
                 margin: 10px auto;
             }
         }
     }
-}
