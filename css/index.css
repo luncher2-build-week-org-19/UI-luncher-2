@@ -151,71 +151,125 @@ p {
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
-.container {
-  min-width: 500px;
-  margin: 0 auto;
-  width: 100%;
-}
-@media (min-width: 800px) {
-  .container {
-    width: 100%;
-  }
+.background {
+  background-image: url('/img/kids-eating2.jpg');
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
 }
 footer {
-  margin: 50px auto;
-  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
+  background-color: red;
+  color: white;
+  font-weight: 700px;
+  text-align: center;
+}
+.menu-container {
+  width: 100%;
+  height: 500px;
+  margin: 0px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c2095a;
+}
+.menu-container .h1header {
+  width: 100%;
+  height: 500px;
 }
 .dropmenu {
   position: absolute;
-  left: 20px;
+  left: 400px;
+  height: 500px;
 }
 .dropmenu .dropmenu-btn {
   padding: 15px;
-  border: 2px solid #180aaf;
-  color: #c2095a;
-}
-.dropmenu-content {
-  width: 100%;
-  position: absolute;
-}
-.register-top-border {
-  border-top: 2px solid #c2095a;
-  width: 100%;
-  margin: 0 auto 10px auto;
-}
-.form-input {
-  display: flex;
-  flex-direction: column;
-}
-.form-input input {
-  padding: 10px;
-  border: none;
-  margin: 10px auto;
-  width: 100%;
-  border: 1px solid red;
-  border-radius: 10px;
-  background-color: #fefff2;
-}
-.form-input #regSubmit {
+  border: 3px solid #c2095a;
   width: 100%;
   background-color: #c2095a;
   color: #fefff2;
-  border-radius: 20px;
-  padding: 20px;
+  border-radius: 10px;
+  padding: 11px;
   font-size: 1.5rem;
   border: none;
 }
-.form-input .btn button {
-  margin: 0 auto;
+.dropmenu .dropmenu-btn:hover {
+  background-color: #fefff2;
+  color: #c2095a;
+  border: 1px solid red;
+}
+.dropmenu .dropmenu-content {
+  width: 100%;
+  position: absolute;
+  background-color: #fefff2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.dropmenu .menu-links {
   width: 100%;
   text-align: center;
-  padding: 10px;
-  margin: 10px auto;
+  padding: 15px 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #c2095a;
 }
-.donate {
+.dropmenu .dropmenu-hidden {
+  display: none;
+}
+.middle {
   width: 100%;
-  margin: 10px 0;
+}
+.middle h2 {
+  margin: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+.middle p {
+  margin: 20px;
+}
+.middle-paragraphs {
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .middle-paragraphs {
+    width: 100%;
+    display: flex;
+  }
+}
+.middle-paragraphs .middle-paragraph {
+  background-color: #c2095a;
+  padding: 50px 20px;
+  margin: 50px 50px;
+  color: #fefff2;
+  border-radius: 20px;
+}
+@media (min-width: 800px) {
+}
+.signup {
+  padding: 50px 205px;
+  margin: 0px auto;
+  align-self: center;
+  display: inline;
+}
+.signup button {
+  width: 20%;
+  background-color: #c2095a;
+  color: #fefff2;
   border-radius: 10px;
-  display: block;
+  padding: 11px;
+  font-size: 1.2rem;
+  border: none;
 }
