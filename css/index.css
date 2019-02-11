@@ -151,6 +151,16 @@ p {
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
+.container {
+  min-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .container {
+    width: 100%;
+  }
+}
 footer {
   margin: 50px auto;
   text-align: center;
@@ -168,4 +178,44 @@ footer {
 .dropmenu-content {
   width: 100%;
   position: absolute;
+}
+.register-top-border {
+  border-top: 2px solid #c2095a;
+  width: 100%;
+  margin: 0 auto 10px auto;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+.form-input input {
+  padding: 10px;
+  border: none;
+  margin: 10px auto;
+  width: 100%;
+  border: 1px solid red;
+  border-radius: 10px;
+  background-color: #fefff2;
+}
+.form-input #regSubmit {
+  width: 100%;
+  background-color: #c2095a;
+  color: #fefff2;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+}
+.form-input .btn button {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin: 10px auto;
+}
+.donate {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+  display: block;
 }
