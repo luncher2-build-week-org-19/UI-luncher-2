@@ -1,17 +1,40 @@
 .dropmenu {
     // z-index: 2;
     position: absolute;
-    left: 20px;
-    
-    .dropmenu-btn {
+    left: 400px; //moves the menu to the right side of the page
+    height: 500px; //movest he menu to the top of the page
+    .dropmenu-btn {  // Menu Drop down
         padding: 15px;
-        border: 2px solid @blue;
-        color: @red-color;
+        border: 3px solid @red-color;
+        .custom-btn (100%, @red-color, @offwhite-color, 1.5rem);
+        &:hover {
+            background-color: @offwhite-color;
+            color: @red-color;
+            .border;
+          }
     }
-}
-
-.dropmenu-content {
+    
+    .dropmenu-content {
     width: 100%;
     position: absolute;
+    background-color: @offwhite-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin-top: 10px;
+
 }
+.menu-links {
+    width: 100%;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: @red-color;
+}
+.dropmenu-hidden {
+    display: none;
+  }
+}
+
 
