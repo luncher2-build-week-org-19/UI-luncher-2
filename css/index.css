@@ -137,6 +137,7 @@ table {
 body {
   min-width: 500px;
   width: 100%;
+  margin: 0;
 }
 html {
   font-size: 62.5%;
@@ -155,43 +156,16 @@ footer {
   text-align: center;
   width: 100%;
 }
-.nav-container {
-  min-width: 500px;
+.dropmenu {
+  position: absolute;
+  left: 20px;
+}
+.dropmenu .dropmenu-btn {
+  padding: 15px;
+  border: 2px solid #180aaf;
+  color: #c2095a;
+}
+.dropmenu-content {
   width: 100%;
-  background-image: url("../img/hands-together.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  opacity: 0.9;
-}
-.nav-header {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  background-color: #f9a03f;
-}
-@media (min-width: 1000px) {
-  .nav-header {
-    flex-direction: row;
-  }
-}
-.nav-header h1 {
-  border: 1px solid red;
-  margin: 50px auto;
-}
-@media (min-width: 1000px) {
-  .nav-header h1 {
-    margin: 100px;
-  }
-}
-.nav-header nav {
-  border: 1px solid red;
-  margin: 50px auto;
-}
-@media (min-width: 1000px) {
-  .nav-header nav {
-    margin: 100px;
-    padding-top: 50px;
-  }
+  position: absolute;
 }

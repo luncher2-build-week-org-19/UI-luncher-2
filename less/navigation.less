@@ -98,42 +98,41 @@
 
 // Potential new code
 
-.nav-container {
-    min-width: 500px;
-    width: 100%;
-    background-image: url("../img/hands-together.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    opacity: 0.9;
+// .menu-container {
+//     min-width: 500px;
+//     width: 100%;
+//     // background-image: url("../img/hands-together.jpg");
+//     background-size: 100%;
+//     background-repeat: no-repeat;
+//     opacity: 0.9;
 
-}
+// }
 
 
-.nav-header {
+.menu-container {
     .border;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     width: 100%;
-    background-color: @headerbg-color;
+    height: 50px;
+    // background-image: url("../img/hands-together.jpg");
+    // background-size: 100%;
+    // opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: @offwhite;
 
-    @media @desktop {
-        flex-direction: row;
+    .h1header {
+        .border;
+        // margin: 50px auto;
+        height: 50px;
     }
 
-    h1 {
-        .border;
-        margin: 50px auto;
-
-        @media @desktop {
-            margin: 100px;
-        }
-    }
-
-    nav {
-        .border;
-        margin: 50px auto;
-    
+    .dropmenu {
+        .border-test;
+        margin: 0 auto;
+        // text-align: center;
+        // width: 100%;
         @media @desktop {
             margin: 100px;
             padding-top: 50px;
