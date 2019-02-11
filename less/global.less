@@ -1,5 +1,5 @@
 * {
-    .box-sizing();
+    .box-sizing ();
 }
 
 body {
@@ -8,13 +8,10 @@ body {
     margin: 0;
 }
 
-html, {
+html,
+    {
     font-size: 62.5%;
     color: @font-color;
-    // background-image: url("../img/hands-together.jpg");
-    // background-size: 500px;
-    // background-repeat: no-repeat;
-    // opacity: 0.9;
 
 }
 
@@ -28,19 +25,36 @@ p {
     line-height: 1.5rem;
 }
 
-.container {
-    min-width: 500px;
-    margin: 0 auto;
-    width: 100%;
-    @media @desktop {
-        width: 100%;
+.background {
+    background-image: url('/img/kids-eating2.jpg');
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+
+    /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+    background-attachment: fixed;
+
+    /* This is what makes the background image rescale based
+     on the container's size */
+    background-size: cover;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // min-width: 100%;
+    // min-height: 100%;
+
+    // linear-gradient(to bottom,rgba(194, 9, 89, 0.507) , rgba(24, 10, 175, 0.637));
     }
-}
-
-
-footer {
-    width: 100%;
-    margin: 50px auto;
-    text-align: center;
-    width: 100%;
-}
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: red;
+        color: white;
+        font-weight: 700px;
+        text-align: center;
+    }
