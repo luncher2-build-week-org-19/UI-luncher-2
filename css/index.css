@@ -138,21 +138,7 @@ body {
   min-width: 500px;
   width: 100%;
   margin: 0;
-}
-html {
-  font-size: 62.5%;
-  color: #4c4c4c;
-}
-h1 {
-  font-size: 3rem;
-  font-weight: 700;
-}
-p {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-}
-.background {
-  background-image: url('/img/kids-eating2.jpg');
+  background: url('/img/kids-eating2.jpg');
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
   /* Background image doesn't tile */
@@ -164,40 +150,74 @@ p {
      on the container's size */
   background-size: cover;
 }
+@media (min-width: 800px) {
+  body {
+    background: url('/img/kids-eating2.jpg');
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    /* Background image is fixed in the viewport so that it doesn't move when 
+         the content's height is greater than the image's height */
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based
+         on the container's size */
+    background-size: cover;
+  }
+}
+html {
+  font-size: 62.5%;
+  color: #fefff2;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: rgba(194, 9, 89, 0.87);
   color: white;
   font-weight: 700px;
   text-align: center;
 }
 .menu-container {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 500px;
   margin: 0px auto;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #c2095a;
+  color: #4c4c4c;
+  background-color: rgba(249, 159, 63, 0.945);
+}
+@media (min-width: 800px) {
+  .menu-container {
+    display: flex;
+    justify-content: column;
+    background: none;
+  }
 }
 .menu-container .h1header {
   width: 100%;
-  height: 500px;
 }
-.dropmenu {
-  position: absolute;
-  left: 400px;
-  height: 500px;
+.menu-container .dropmenu {
+  width: 15%;
+  text-align: center;
 }
 .dropmenu .dropmenu-btn {
   padding: 15px;
-  border: 3px solid #c2095a;
+  border: 3px solid rgba(194, 9, 89, 0.87);
   width: 100%;
-  background-color: #c2095a;
+  background-color: rgba(194, 9, 89, 0.87);
   color: #fefff2;
   border-radius: 10px;
   padding: 11px;
@@ -206,12 +226,11 @@ footer {
 }
 .dropmenu .dropmenu-btn:hover {
   background-color: #fefff2;
-  color: #c2095a;
+  color: rgba(194, 9, 89, 0.87);
   border: 1px solid red;
 }
 .dropmenu .dropmenu-content {
   width: 100%;
-  position: absolute;
   background-color: #fefff2;
   display: flex;
   flex-direction: column;
@@ -224,7 +243,7 @@ footer {
   padding: 15px 10px;
   font-size: 1.5rem;
   text-decoration: none;
-  color: #c2095a;
+  color: rgba(194, 9, 89, 0.87);
 }
 .dropmenu .dropmenu-hidden {
   display: none;
@@ -233,7 +252,7 @@ footer {
   width: 100%;
 }
 .middle h2 {
-  margin: 20px;
+  margin: 100px 20px;
   font-size: 2rem;
   text-align: center;
 }
@@ -250,13 +269,11 @@ footer {
   }
 }
 .middle-paragraphs .middle-paragraph {
-  background-color: #c2095a;
+  background-color: rgba(194, 9, 89, 0.87);
   padding: 50px 20px;
   margin: 50px 50px;
   color: #fefff2;
   border-radius: 20px;
-}
-@media (min-width: 800px) {
 }
 .signup {
   padding: 50px 205px;
@@ -266,7 +283,7 @@ footer {
 }
 .signup button {
   width: 20%;
-  background-color: #c2095a;
+  background-color: rgba(194, 9, 89, 0.87);
   color: #fefff2;
   border-radius: 10px;
   padding: 11px;
