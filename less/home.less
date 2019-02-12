@@ -3,13 +3,26 @@
     // background-color: @background-color;
     // width: 100%;
     h2 {
-        margin: 100px 20px;
+        background-color: @headerbg-color;
+        border-radius: 10px;
+        margin: 100px 50px;
         font-size: 2rem;
+        font-weight: 900;
         text-align: center;
+
+        @media @desktop {
+            margin: 150px 50px;
+        }
     }
 
     p {
-        margin: 20px;
+        text-align: center;
+        margin: 50px;
+        background-color: @red-color;
+        padding: 50px 20px;
+        color: @offwhite-color;
+        border-radius: 20px;
+        font-weight: ;
     }
 }
 
@@ -24,30 +37,46 @@
     }
 
     .middle-paragraph {
-        // width: 100%;
-        background-color: @red-color;
-        padding: 50px 20px;
-        margin: 50px 50px;
-        color: @offwhite-color;
-        border-radius: 20px;
 
-        @media @desktop {
-            width: 100%;
         }
     }
-}
 
-.signup {
+
+.signup-options {
     text-align: center;
     margin: 10px;
+
+    @media @desktop {
+        display: flex;
+        justify-content: center;
+    }
+
     h2 {
-        margin: 25px;
+        background: @headerbg-color;
+        border-radius: 10px;
+        font-weight: 900;
+        margin: 20px 100px;
         padding: 20px;
         font-size: 2rem;
+
+        @media @desktop {
+
+        }
     }
+
     button {
-    .custom-btn(30%, @red-color, @offwhite-color, 1.5rem);
-    margin: 20px auto;
-    padding: 20px 5px;
+        .custom-btn(30%, @button-color, @font-color, 1.5rem);
+        margin: 20px auto;
+        padding: 20px 5px;
+
+        @media @desktop {
+
+        }
+    }
+
+    @media @desktop {
+        button {
+            .custom-btn(30%, @button-color, @font-color, 1.5rem);
+        }
     }
 }

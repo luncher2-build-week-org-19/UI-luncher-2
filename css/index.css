@@ -186,6 +186,9 @@ footer {
   font-weight: 700px;
   text-align: center;
 }
+.container {
+  min-width: 500px;
+}
 .menu-container {
   position: fixed;
   top: 0;
@@ -290,12 +293,26 @@ footer {
   }
 }
 .middle h2 {
-  margin: 100px 20px;
+  background-color: rgba(24, 10, 175, 0.555);
+  border-radius: 10px;
+  margin: 100px 50px;
   font-size: 2rem;
+  font-weight: 900;
   text-align: center;
 }
+@media (min-width: 1000px) {
+  .middle h2 {
+    margin: 150px 50px;
+  }
+}
 .middle p {
-  margin: 20px;
+  text-align: center;
+  margin: 50px;
+  background-color: rgba(194, 9, 89, 0.87);
+  padding: 50px 20px;
+  color: #fefff2;
+  border-radius: 20px;
+  font-weight: ;
 }
 .middle-paragraphs {
   width: 100%;
@@ -306,28 +323,25 @@ footer {
     display: flex;
   }
 }
-.middle-paragraphs .middle-paragraph {
-  background-color: rgba(194, 9, 89, 0.87);
-  padding: 50px 20px;
-  margin: 50px 50px;
-  color: #fefff2;
-  border-radius: 20px;
-}
-@media (min-width: 1000px) {
-  .middle-paragraphs .middle-paragraph {
-    width: 100%;
-  }
-}
-.signup {
+.signup-options {
   text-align: center;
   margin: 10px;
 }
-.signup h2 {
-  margin: 25px;
+@media (min-width: 1000px) {
+  .signup-options {
+    display: flex;
+    justify-content: center;
+  }
+}
+.signup-options h2 {
+  background: rgba(24, 10, 175, 0.555);
+  border-radius: 10px;
+  font-weight: 900;
+  margin: 20px 100px;
   padding: 20px;
   font-size: 2rem;
 }
-.signup button {
+.signup-options button {
   width: 30%;
   background-color: rgba(194, 9, 89, 0.87);
   color: #fefff2;
@@ -336,4 +350,14 @@ footer {
   border: none;
   margin: 20px auto;
   padding: 20px 5px;
+}
+@media (min-width: 1000px) {
+  .signup-options button {
+    width: 30%;
+    background-color: rgba(194, 9, 89, 0.87);
+    color: #fefff2;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    border: none;
+  }
 }
