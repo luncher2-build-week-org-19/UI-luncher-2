@@ -134,35 +134,9 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-body {
+.container {
   min-width: 500px;
-  margin: 0;
-  background: url('/img/kids-eating2.jpg') #4c4c4c;
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
-  /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */
-  background-attachment: fixed;
-  /* This is what makes the background image rescale based
-     on the container's size */
-  background-size: cover;
-}
-@media (min-width: 1000px) {
-  body {
-    background: url('/img/kids-eating2.jpg') #4c4c4c;
-    /* Background image is centered vertically and horizontally at all times */
-    background-position: center center;
-    /* Background image doesn't tile */
-    background-repeat: no-repeat;
-    /* Background image is fixed in the viewport so that it doesn't move when 
-         the content's height is greater than the image's height */
-    background-attachment: fixed;
-    /* This is what makes the background image rescale based
-         on the container's size */
-    background-size: cover;
-  }
+  width: 100%;
 }
 html {
   font-size: 62.5%;
@@ -185,9 +159,6 @@ footer {
   color: white;
   font-weight: 700px;
   text-align: center;
-}
-.container {
-  min-width: 500px;
 }
 .menu-container {
   position: fixed;
@@ -290,6 +261,34 @@ footer {
 @media (min-width: 1000px) {
   .dropmenu .dropmenu-hidden {
     display: initial;
+  }
+}
+.home {
+  background: url('/img/kids-eating2.jpg') #4c4c4c;
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+}
+@media (min-width: 1000px) {
+  .home {
+    background: url('/img/kids-eating2.jpg') #4c4c4c;
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    /* Background image is fixed in the viewport so that it doesn't move when 
+         the content's height is greater than the image's height */
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based
+         on the container's size */
+    background-size: cover;
   }
 }
 .middle h2 {
