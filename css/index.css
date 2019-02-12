@@ -357,3 +357,11 @@ footer {
     border: none;
   }
 }
+.login-form {
+  background: rgba(254, 255, 242, 0.726);
+  margin: 100px 50px;
+  padding: 100px;
+}
+.login-form label {
+  color: #4c4c4c;
+}
