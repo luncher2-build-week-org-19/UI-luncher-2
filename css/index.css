@@ -136,7 +136,6 @@ table {
 }
 body {
   min-width: 500px;
-  width: 100%;
   margin: 0;
   background: url('/img/kids-eating2.jpg') #4c4c4c;
   /* Background image is centered vertically and horizontally at all times */
@@ -150,7 +149,7 @@ body {
      on the container's size */
   background-size: cover;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   body {
     background: url('/img/kids-eating2.jpg') #4c4c4c;
     /* Background image is centered vertically and horizontally at all times */
@@ -199,19 +198,31 @@ footer {
   color: #4c4c4c;
   background-color: rgba(249, 159, 63, 0.945);
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .menu-container {
+    width: 100%;
     display: flex;
-    justify-content: column;
-    background: none;
+    flex-direction: column;
+    background: rgba(249, 159, 63, 0.945);
   }
 }
 .menu-container .h1header {
   width: 100%;
 }
-.menu-container .dropmenu {
-  width: 15%;
+@media (min-width: 1000px) {
+  .menu-container .h1header {
+    width: 100%;
+    text-align: center;
+  }
+}
+.menu-container .dropmenu-btn {
+  width: 100%;
   text-align: center;
+}
+@media (min-width: 1000px) {
+  .dropmenu {
+    margin: 25px 0 -4px 0;
+  }
 }
 .dropmenu .dropmenu-btn {
   padding: 15px;
@@ -229,6 +240,11 @@ footer {
   color: rgba(194, 9, 89, 0.87);
   border: 1px solid red;
 }
+@media (min-width: 1000px) {
+  .dropmenu .dropmenu-btn {
+    display: none;
+  }
+}
 .dropmenu .dropmenu-content {
   width: 100%;
   background-color: #fefff2;
@@ -236,6 +252,17 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
+}
+@media (min-width: 1000px) {
+  .dropmenu .dropmenu-content {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(194, 9, 89, 0.87);
+    padding: 10px 0;
+  }
 }
 .dropmenu .menu-links {
   width: 100%;
@@ -245,11 +272,24 @@ footer {
   text-decoration: none;
   color: rgba(194, 9, 89, 0.87);
 }
+@media (min-width: 1000px) {
+  .dropmenu .menu-links {
+    width: 100%;
+    margin: 0 50px;
+    padding: 6px 39px;
+    font-weight: 700;
+    color: #fefff2;
+    text-align: center;
+    border-radius: 5px;
+  }
+}
 .dropmenu .dropmenu-hidden {
   display: none;
 }
-.middle {
-  width: 100%;
+@media (min-width: 1000px) {
+  .dropmenu .dropmenu-hidden {
+    display: initial;
+  }
 }
 .middle h2 {
   margin: 100px 20px;
@@ -262,7 +302,7 @@ footer {
 .middle-paragraphs {
   width: 100%;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .middle-paragraphs {
     width: 100%;
     display: flex;
@@ -274,6 +314,11 @@ footer {
   margin: 50px 50px;
   color: #fefff2;
   border-radius: 20px;
+}
+@media (min-width: 1000px) {
+  .middle-paragraphs .middle-paragraph {
+    width: 100%;
+  }
 }
 .signup {
   padding: 50px 205px;

@@ -1,40 +1,77 @@
 .dropmenu {
+
     // z-index: 2;
     // position: absolute;
     // left: 400px; //moves the menu to the right side of the page
     // height: 500px; //movest he menu to the top of the page
-    .dropmenu-btn {  // Menu Drop down
+    @media @desktop {
+        margin: 25px 0 -4px 0;
+    }
+
+    .dropmenu-btn {
+        // Menu Drop down
         padding: 15px;
         border: 3px solid @red-color;
         .custom-btn (100%, @red-color, @offwhite-color, 1.5rem);
+
         &:hover {
             background-color: @offwhite-color;
             color: @red-color;
             .border;
-          }
+        }
+
+        @media @desktop {
+            display: none;
+        }
     }
-    
+
     .dropmenu-content {
-    width: 100%;
-    // position: absolute;
-    background-color: @offwhite-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    margin-top: 10px;
+        width: 100%;
+        // position: absolute;
+        background-color: @offwhite-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
 
-}
-.menu-links {
-    width: 100%;
-    text-align: center;
-    padding: 15px 10px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: @red-color;
-}
-.dropmenu-hidden {
-    display: none;
-  }
-}
+        @media @desktop {
+            width: 100%;
+            position: fixed;
+            left: 0;
+            text-align: center;
+            // background-color: initial;
+            margin: 0 auto;
+            background-color: @red-color;
+            padding: 10px 0;
+        }
 
+    }
 
+    .menu-links {
+        width: 100%;
+        text-align: center;
+        padding: 15px 10px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: @red-color;
+
+        @media @desktop {
+            width: 100%;
+            margin: 0 50px;
+            padding: 6px 39px;
+            font-weight: 700;
+            color: @offwhite-color;
+            text-align: center;
+            border-radius: 5px;
+            // .border;
+        }
+    }
+
+    .dropmenu-hidden {
+        display: none;
+
+        @media @desktop {
+            display: initial;
+        }
+    }
+}
