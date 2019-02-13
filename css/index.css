@@ -1,3 +1,6 @@
+.min-view {
+  min-width: 500px;
+}
 .border {
   border: 1px solid red;
 }
@@ -187,11 +190,13 @@ footer {
   text-align: center;
 }
 .menu-container {
+  z-index: 2;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   margin: 0px auto;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   color: #4c4c4c;
@@ -199,10 +204,12 @@ footer {
 }
 @media (min-width: 1000px) {
   .menu-container {
+    background: rgba(249, 159, 63, 0.945);
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: rgba(249, 159, 63, 0.945);
+    position: fixed;
+    left: 0;
   }
 }
 .menu-container .h1header {
@@ -218,20 +225,24 @@ footer {
   width: 100%;
   text-align: center;
 }
-@media (min-width: 1000px) {
-  .dropmenu {
-    margin: 25px 0 -4px 0;
-  }
+.dropmenu {
+  z-index: 2;
+  position: fixed;
+  left: 400px;
 }
 .dropmenu .dropmenu-btn {
-  padding: 15px 40px;
-  border: 3px solid rgba(194, 9, 89, 0.87);
-  width: 100%;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  text-align: center;
+  padding: 17px 35px;
+  width: 20%;
   background-color: rgba(194, 9, 89, 0.87);
   color: #fefff2;
   border-radius: 10px;
   font-size: 1.5rem;
   border: none;
+  font-family: 'Permanent Marker', cursive;
 }
 .dropmenu .dropmenu-btn:hover {
   background-color: #fefff2;
@@ -244,12 +255,14 @@ footer {
   }
 }
 .dropmenu .dropmenu-content {
-  width: 100%;
+  width: 20%;
   background-color: #fefff2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
+  margin: 50px 20px;
+  position: fixed;
+  right: 0;
 }
 @media (min-width: 1000px) {
   .dropmenu .dropmenu-content {
@@ -274,7 +287,7 @@ footer {
   .dropmenu .menu-links {
     width: 100%;
     margin: 0 50px;
-    padding: 6px 39px;
+    padding: 6px 35px;
     font-weight: 700;
     color: #fefff2;
     text-align: center;
@@ -287,10 +300,20 @@ footer {
 @media (min-width: 1000px) {
   .dropmenu .dropmenu-hidden {
     display: initial;
+    margin: 50px auto;
+  }
+}
+.home {
+  min-width: 500px;
+  margin: 0 auto;
+}
+@media (min-width: 1000px) {
+  .home {
+    max-width: 1000px;
   }
 }
 .middle h2 {
-  background-color: rgba(24, 10, 175, 0.658);
+  background-color: rgba(24, 10, 175, 0.555);
   border-radius: 10px;
   margin: 100px 50px;
   font-size: 2rem;
@@ -304,9 +327,9 @@ footer {
 }
 .middle p {
   text-align: center;
-  margin: 50px;
+  margin: 20px 50px;
   background-color: rgba(194, 9, 89, 0.87);
-  padding: 50px 20px;
+  padding: 20px 20px;
   color: #fefff2;
   border-radius: 20px;
   font-weight: ;
@@ -331,20 +354,21 @@ footer {
   }
 }
 .signup-options h2 {
-  background: rgba(24, 10, 175, 0.658);
+  background: rgba(24, 10, 175, 0.555);
   border-radius: 10px;
-  font-weight: 900;
+  font-weight: 500;
   margin: 20px 100px;
   padding: 20px;
   font-size: 2rem;
 }
 .signup-options button {
   width: 30%;
-  background-color: rgba(194, 9, 89, 0.87);
+  background-color: rgba(249, 159, 63, 0.945);
   color: #fefff2;
   border-radius: 10px;
   font-size: 1.5rem;
   border: none;
+  font-family: 'Permanent Marker', cursive;
   margin: 20px auto;
   padding: 20px 5px;
 }
@@ -356,11 +380,6 @@ footer {
     border-radius: 10px;
     font-size: 1.5rem;
     border: none;
+    font-family: 'Permanent Marker', cursive;
   }
-}
-.login-form {
-  background: rgba(254, 255, 242, 0.726);
-  margin: 100px 50px;
-  padding: 100px;
-  color: #4c4c4c;
 }

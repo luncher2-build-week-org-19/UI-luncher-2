@@ -1,19 +1,23 @@
 .dropmenu {
 
-    // z-index: 2;
-    // position: absolute;
-    // left: 400px; //moves the menu to the right side of the page
+    z-index: 2;
+    position: fixed;
+    left: 400px; //moves the menu to the right side of the page
     // height: 500px; //movest he menu to the top of the page
-    @media @desktop {
-        margin: 25px 0 -4px 0;
-    }
+    // @media @desktop {
+    //     margin: 25px 0 -4px 0;
+    // }
 
 // Menu Drop down
     .dropmenu-btn {
-        
-        padding: 15px 40px;
-        border: 3px solid @red-color;
-        .custom-btn (100%, @red-color, @offwhite-color, 1.5rem);
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        text-align: center;
+        // margin: 0 auto;
+        padding: 17px 35px;
+        // border: 3px solid @red-color;
+        .custom-btn (20%, @red-color, @offwhite-color, 1.5rem);
 
         &:hover {
             background-color: @offwhite-color;
@@ -27,13 +31,15 @@
     }
 
     .dropmenu-content {
-        width: 100%;
+        width: 20%;
         // position: absolute;
         background-color: @offwhite-color;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 10px;
+        margin: 50px 20px;
+        position: fixed;
+        right: 0;
 
         @media @desktop {
             width: 100%;
@@ -59,7 +65,7 @@
         @media @desktop {
             width: 100%;
             margin: 0 50px;
-            padding: 6px 39px;
+            padding: 6px 35px;
             font-weight: 700;
             color: @offwhite-color;
             text-align: center;
@@ -73,6 +79,7 @@
 
         @media @desktop {
             display: initial;
+            margin: 50px auto;
         }
     }
 }

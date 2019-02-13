@@ -1,24 +1,28 @@
 .menu-container {
-    // z-index: 1;
+    z-index: 2;
     // .border;
     position: fixed; 
     top: 0;
+    left: 0;
     width: 100%;
     // height: 500px; //extends the background image down
     margin: 0px auto;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     // align-items: center;
     color: @dark-gray;
     background-color: @navbg-color; // need to fix header from expanding when menu button toggles to show content
 
+    
     @media @desktop {
+        background: @navbg-color;
         width: 100%;
         display: flex;
         flex-direction: column;
-        // position: absolute;
-        background: @navbg-color;
+        position: fixed;
+        left: 0;
+        
     
     }
 
