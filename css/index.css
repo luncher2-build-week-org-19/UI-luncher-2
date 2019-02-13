@@ -139,7 +139,7 @@ table {
 }
 body {
   min-width: 300px;
-  background-image: url("../img/kids-eating2.jpg");
+  background: url('/img/kids-eating2.jpg') #4c4c4c;
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
   /* Background image doesn't tile */
@@ -153,7 +153,7 @@ body {
 }
 @media (min-width: 1000px) {
   body {
-    background-image: url("../img/kids-eating2.jpg") #4c4c4c;
+    background: url('/img/kids-eating2.jpg') #4c4c4c;
     /* Background image is centered vertically and horizontally at all times */
     background-position: center center;
     /* Background image doesn't tile */
@@ -167,17 +167,17 @@ body {
   }
 }
 html {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Atma', cursive;
   font-size: 62.5%;
   color: #fefff2;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 700;
 }
 p {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
+  font-size: 1.7rem;
+  line-height: 3rem;
 }
 footer {
   position: fixed;
@@ -242,7 +242,7 @@ footer {
   border-radius: 10px;
   font-size: 1.5rem;
   border: none;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Atma', cursive;
 }
 .dropmenu .dropmenu-btn:hover {
   background-color: #fefff2;
@@ -315,24 +315,62 @@ footer {
 .middle h2 {
   background-color: rgba(24, 10, 175, 0.555);
   border-radius: 10px;
-  margin: 100px 50px;
-  font-size: 2rem;
+  margin: 100px 50px 50px 50px;
+  font-size: 3rem;
   font-weight: 900;
   text-align: center;
+  padding: 20px;
 }
 @media (min-width: 1000px) {
   .middle h2 {
-    margin: 150px 50px;
+    width: 50%;
+    margin: 150px auto;
+    text-align: center;
   }
 }
-.middle p {
+@media (min-width: 1000px) {
+}
+.mid-intro .mid-intro-content {
+  width: 100%;
   text-align: center;
-  margin: 20px 50px;
+  margin: 0 auto;
   background-color: rgba(194, 9, 89, 0.87);
   padding: 20px 20px;
   color: #fefff2;
   border-radius: 20px;
-  font-weight: ;
+}
+@media (min-width: 1000px) {
+  .mid-intro .mid-intro-content {
+    width: 50%;
+    text-align: center;
+    margin: 20px 50px;
+    background-color: rgba(194, 9, 89, 0.87);
+    padding: 20px 20px;
+    color: #fefff2;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 1000px) {
+  .mid-intro-imgs {
+    display: flex;
+    justify-content: center;
+  }
+}
+.mid-intro-imgs .mid-intro-img img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  margin: 20px auto;
+  padding: 10px;
+}
+@media (min-width: 1000px) {
+  .mid-intro-imgs .mid-intro-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 100px 20px 0px 20px;
+  }
 }
 .middle-paragraphs {
   width: 100%;
@@ -341,6 +379,24 @@ footer {
   .middle-paragraphs {
     width: 100%;
     display: flex;
+  }
+}
+.middle-paragraphs .middle-paragraph {
+  text-align: center;
+  margin: 20px auto;
+  background-color: rgba(194, 9, 89, 0.87);
+  padding: 20px 20px;
+  color: #fefff2;
+  border-radius: 20px;
+}
+@media (min-width: 1000px) {
+  .middle-paragraphs .middle-paragraph {
+    text-align: center;
+    margin: 20px 50px;
+    background-color: rgba(194, 9, 89, 0.87);
+    padding: 20px 20px;
+    color: #fefff2;
+    border-radius: 20px;
   }
 }
 .signup-options {
@@ -368,7 +424,7 @@ footer {
   border-radius: 10px;
   font-size: 1.5rem;
   border: none;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Atma', cursive;
   margin: 20px auto;
   padding: 20px 5px;
 }
@@ -380,7 +436,7 @@ footer {
     border-radius: 10px;
     font-size: 1.5rem;
     border: none;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Atma', cursive;
     margin: 20px 30px;
     padding: 20px 25px;
   }

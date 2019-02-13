@@ -2,6 +2,7 @@
     // .min-view;
     max-width: 400px;
     margin: 0 auto;
+
     @media @desktop {
         max-width: 1000px;
     }
@@ -14,30 +15,79 @@
     h2 {
         background-color: @headerbg-color;
         border-radius: 10px;
-        margin: 100px 50px;
-        font-size: 2rem;
+        margin: 100px 50px 50px 50px;
+        font-size: 3rem;
         font-weight: 900;
         text-align: center;
+        padding: 20px;
 
         @media @desktop {
-            margin: 150px 50px;
+            width: 50%;
+            margin: 150px auto;
+            text-align: center;
         }
     }
+}
 
-    p {
+.mid-intro {
+
+    @media @desktop {
+        // display: flex;
+    }
+
+    .mid-intro-content {
+        width: 100%;
         text-align: center;
-        margin: 20px 50px;
+        margin: 0 auto;
         background-color: @red-color;
         padding: 20px 20px;
         color: @offwhite-color;
         border-radius: 20px;
-        font-weight: ;
+
+        @media @desktop {
+            width: 50%;
+            text-align: center;
+            margin: 20px 50px;
+            background-color: @red-color;
+            padding: 20px 20px;
+            color: @offwhite-color;
+            border-radius: 20px;
+        }
+
+
+    }
+}
+
+.mid-intro-imgs {
+    @media @desktop {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mid-intro-img {
+        img {
+            width: 100%;
+            display: block;
+            border-radius: 20px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        @media @desktop {
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                padding: 10px;
+                margin: 100px 20px 0px 20px;
+
+            }
+        }
     }
 }
 
 .middle-paragraphs {
-    // display: flex;
-    // flex-direction: column;
+
     width: 100%;
 
     @media @desktop {
@@ -46,9 +96,23 @@
     }
 
     .middle-paragraph {
+        text-align: center;
+        margin: 20px auto;
+        background-color: @red-color;
+        padding: 20px 20px;
+        color: @offwhite-color;
+        border-radius: 20px;
 
+        @media @desktop {
+            text-align: center;
+            margin: 20px 50px;
+            background-color: @red-color;
+            padding: 20px 20px;
+            color: @offwhite-color;
+            border-radius: 20px;
         }
     }
+}
 
 
 .signup-options {
@@ -68,9 +132,7 @@
         padding: 20px;
         font-size: 2rem;
 
-        @media @desktop {
-
-        }
+        @media @desktop {}
     }
 
     button {
@@ -85,8 +147,4 @@
         }
     }
 
-    @media @desktop {
-        
-    }
 }
-
