@@ -290,7 +290,7 @@ footer {
   }
 }
 .middle h2 {
-  background-color: rgba(24, 10, 175, 0.555);
+  background-color: rgba(24, 10, 175, 0.658);
   border-radius: 10px;
   margin: 100px 50px;
   font-size: 2rem;
@@ -331,7 +331,7 @@ footer {
   }
 }
 .signup-options h2 {
-  background: rgba(24, 10, 175, 0.555);
+  background: rgba(24, 10, 175, 0.658);
   border-radius: 10px;
   font-weight: 900;
   margin: 20px 100px;
