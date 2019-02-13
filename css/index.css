@@ -1,5 +1,5 @@
 .min-view {
-  min-width: 500px;
+  min-width: 300px;
 }
 .border {
   border: 1px solid red;
@@ -138,7 +138,7 @@ table {
   box-sizing: border-box;
 }
 body {
-  min-width: 500px;
+  min-width: 300px;
   background: url('/img/kids-eating2.jpg') #4c4c4c;
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
@@ -304,7 +304,7 @@ footer {
   }
 }
 .home {
-  min-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
 }
 @media (min-width: 1000px) {
@@ -345,7 +345,7 @@ footer {
 }
 .signup-options {
   text-align: center;
-  margin: 10px;
+  margin: 10px 50px;
 }
 @media (min-width: 1000px) {
   .signup-options {
@@ -362,7 +362,7 @@ footer {
   font-size: 2rem;
 }
 .signup-options button {
-  width: 30%;
+  width: 100%;
   background-color: rgba(249, 159, 63, 0.945);
   color: #fefff2;
   border-radius: 10px;
@@ -374,12 +374,14 @@ footer {
 }
 @media (min-width: 1000px) {
   .signup-options button {
-    width: 30%;
-    background-color: rgba(194, 9, 89, 0.87);
+    width: 80%;
+    background-color: rgba(249, 159, 63, 0.945);
     color: #fefff2;
     border-radius: 10px;
     font-size: 1.5rem;
     border: none;
     font-family: 'Permanent Marker', cursive;
+    margin: 20px 30px;
+    padding: 20px 25px;
   }
 }

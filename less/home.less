@@ -1,5 +1,6 @@
 .home {
-    .min-view;
+    // .min-view;
+    max-width: 400px;
     margin: 0 auto;
     @media @desktop {
         max-width: 1000px;
@@ -52,7 +53,7 @@
 
 .signup-options {
     text-align: center;
-    margin: 10px;
+    margin: 10px 50px;
 
     @media @desktop {
         display: flex;
@@ -73,28 +74,19 @@
     }
 
     button {
-        .custom-btn(30%, @orange-color, @font-color, 1.5rem);
+        .custom-btn(100%, @orange-color, @font-color, 1.5rem);
         margin: 20px auto;
         padding: 20px 5px;
 
         @media @desktop {
-
+            .custom-btn(80%, @orange-color, @font-color, 1.5rem);
+            margin: 20px 30px;
+            padding: 20px 25px;
         }
     }
 
     @media @desktop {
-        button {
-            .custom-btn(30%, @button-color, @font-color, 1.5rem);
-        }
+        
     }
 }
 
-// .signup-form {
-//     display: hidden;
-//     position: fixed;
-//     top: 100px;
-//     margin: 0 50px;
-//     width: 100%;
-
-//     background-color: @offwhite-color;
-// }
