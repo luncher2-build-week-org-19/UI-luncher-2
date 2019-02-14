@@ -1,12 +1,33 @@
-.social {
-    h2 {
+// Social media icons
+.social-container {
+    @media @desktop {
+        max-width: 1200px;
         width: 100%;
-        margin: 150px 0 0 0;
+        margin: 0 auto;
+    }
+}
+
+
+.social {
+
+
+    h2 {
+        
+        width: 90%;
+        margin: 150px auto 0 auto;
         text-align: center;
         background-color: @blue-color;
         font-size: 3rem;
+        font-weight: 900;
         padding: 15px;
         border-radius: 10px;
+
+        @media @desktop {
+            max-width: 900px;
+            width: 70%;
+            text-align: center;
+            margin: 200px auto 50px auto;
+        }
     }
 
 }
@@ -15,27 +36,48 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // align-content: space-evenly;
+
+    @media @desktop {
+        max-width: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
 
     .social-links {
         text-align: center;
-        width: 100%;
-        margin: 50px auto;
-        // width: 100px;
-        // height: 100px;
-        // padding: 20px 10px;
+        width: 27%;
+        margin: 40px auto;
+
+        @media @desktop {
+            max-width: 800px;
+            width: 20%;
+            margin: 50px auto;
+
+        }
     }
 }
 
+// App buttons
+
 .apps {
     h2 {
-        width: 100%;
+        width: 90%;
         background: @blue-color;
         border-radius: 10px;
         text-align: center;
-        font-weight: 500;
+        font-weight: 900;
         padding: 15px;
         font-size: 3rem;
+        margin: 25px auto;
+
+        @media @desktop {
+            max-width: 900px;
+            width: 70%;
+            margin: 50px auto;
+        }
+
     }
 }
 
@@ -51,12 +93,12 @@
 
     .download {
         text-align: center;
-        width: 100%;
+        width: 43%;
         margin: 25px auto;
 
         @media @desktop {
-            width: 20%;
-            margin: 20px auto;
+            width: 18%;
+            margin: 20px 0;
         }
 
     }

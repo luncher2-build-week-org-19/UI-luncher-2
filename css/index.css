@@ -444,33 +444,73 @@ footer {
     font-weight: 700;
   }
 }
+@media (min-width: 1000px) {
+  .social-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .social h2 {
-  width: 100%;
-  margin: 150px 0 0 0;
+  width: 90%;
+  margin: 150px auto 0 auto;
   text-align: center;
   background-color: rgba(24, 10, 175, 0.555);
   font-size: 3rem;
+  font-weight: 900;
   padding: 15px;
   border-radius: 10px;
+}
+@media (min-width: 1000px) {
+  .social h2 {
+    max-width: 900px;
+    width: 70%;
+    text-align: center;
+    margin: 200px auto 50px auto;
+  }
 }
 .social-icons {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 1000px) {
+  .social-icons {
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
 .social-icons .social-links {
   text-align: center;
-  width: 100%;
-  margin: 50px auto;
+  width: 27%;
+  margin: 40px auto;
+}
+@media (min-width: 1000px) {
+  .social-icons .social-links {
+    max-width: 800px;
+    width: 20%;
+    margin: 50px auto;
+  }
 }
 .apps h2 {
-  width: 100%;
+  width: 90%;
   background: rgba(24, 10, 175, 0.555);
   border-radius: 10px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 900;
   padding: 15px;
   font-size: 3rem;
+  margin: 25px auto;
+}
+@media (min-width: 1000px) {
+  .apps h2 {
+    max-width: 900px;
+    width: 70%;
+    margin: 50px auto;
+  }
 }
 .app-btns {
   display: flex;
@@ -485,12 +525,12 @@ footer {
 }
 .app-btns .download {
   text-align: center;
-  width: 100%;
+  width: 43%;
   margin: 25px auto;
 }
 @media (min-width: 1000px) {
   .app-btns .download {
-    width: 20%;
-    margin: 20px auto;
+    width: 18%;
+    margin: 20px 0;
   }
 }

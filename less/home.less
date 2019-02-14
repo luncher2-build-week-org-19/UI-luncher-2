@@ -8,6 +8,8 @@
     }
 }
 
+// Content after Header
+
 .middle {
 
     // background-color: @background-color;
@@ -64,27 +66,29 @@
         justify-content: center;
     }
 
-    // .mid-intro-img {
+    img {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    @media @desktop {
         img {
-            width: 100%;
-            display: block;
-            border-radius: 20px;
-            margin: 20px auto;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
             padding: 10px;
+            margin: 100px 20px 0px 20px;
+
         }
 
-        @media @desktop {
-            img {
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
-                padding: 10px;
-                margin: 100px 20px 0px 20px;
-
-            }
-        // }
     }
+
 }
+
+// Styling for How It Works
 
 .middle-paragraphs {
 
@@ -114,6 +118,7 @@
     }
 }
 
+// Signup and Donation buttons styling
 
 .signup-options {
     text-align: center;
