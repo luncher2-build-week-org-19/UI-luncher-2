@@ -15,10 +15,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    .facebook {
-        margin: 50px;
-        width: 100px;
-        height: 100px;
+    // align-content: space-evenly;
+
+    .social-links {
+        text-align: center;
+        width: 100%;
+        margin: 50px auto;
+        // width: 100px;
+        // height: 100px;
+        // padding: 20px 10px;
     }
 }
 
@@ -37,10 +42,22 @@
 .app-btns {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+    @media @desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
     .download {
+        text-align: center;
         width: 100%;
-        margin: 50px auto;
+        margin: 25px auto;
+
+        @media @desktop {
+            width: 20%;
+            margin: 20px auto;
+        }
 
     }
 }

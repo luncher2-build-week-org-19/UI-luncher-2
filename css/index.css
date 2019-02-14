@@ -257,13 +257,14 @@ footer {
 }
 .dropmenu .dropmenu-content {
   width: 20%;
-  background-color: #fefff2;
+  background-color: rgba(254, 255, 242, 0.712);
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 50px 20px;
   position: fixed;
   right: 0;
+  border-radius: 10px;
 }
 @media (min-width: 1000px) {
   .dropmenu .dropmenu-content {
@@ -301,7 +302,7 @@ footer {
 @media (min-width: 1000px) {
   .dropmenu .dropmenu-hidden {
     display: initial;
-    margin: 50px auto;
+    margin: 70px auto;
   }
 }
 .home {
@@ -324,7 +325,7 @@ footer {
 }
 @media (min-width: 1000px) {
   .middle h2 {
-    width: 50%;
+    width: 100%;
     margin: 150px auto;
     text-align: center;
   }
@@ -342,9 +343,9 @@ footer {
 }
 @media (min-width: 1000px) {
   .mid-intro .mid-intro-content {
-    width: 50%;
+    width: 100%;
     text-align: center;
-    margin: 20px 50px;
+    margin: 20px auto;
     background-color: rgba(194, 9, 89, 0.87);
     padding: 20px 20px;
     color: #fefff2;
@@ -435,11 +436,12 @@ footer {
     background-color: rgba(249, 159, 63, 0.945);
     color: #fefff2;
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     border: none;
     font-family: 'Atma', cursive;
     margin: 20px 30px;
     padding: 20px 25px;
+    font-weight: 700;
   }
 }
 .social h2 {
@@ -456,10 +458,10 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-.social-icons .facebook {
-  margin: 50px;
-  width: 100px;
-  height: 100px;
+.social-icons .social-links {
+  text-align: center;
+  width: 100%;
+  margin: 50px auto;
 }
 .apps h2 {
   width: 100%;
@@ -473,9 +475,22 @@ footer {
 .app-btns {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+@media (min-width: 1000px) {
+  .app-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .app-btns .download {
+  text-align: center;
   width: 100%;
-  margin: 50px auto;
+  margin: 25px auto;
+}
+@media (min-width: 1000px) {
+  .app-btns .download {
+    width: 20%;
+    margin: 20px auto;
+  }
 }
