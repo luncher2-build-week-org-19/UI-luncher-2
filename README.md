@@ -1,6 +1,6 @@
 # UI-Luncher-2
 
-### An app that gives schools and communities to work together to provide school lunches to students of families who are unable to afford them on a regular basis.
+### An app that gives schools and communities an easy way to work together to provide school lunches to students of families who are unable to afford them on a regular basis.
 
 ## Getting Started
 
