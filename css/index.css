@@ -138,7 +138,6 @@ table {
   box-sizing: border-box;
 }
 body {
-  min-width: 300px;
   background: url('/img/kids-eating2.jpg') #4c4c4c;
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
@@ -306,7 +305,6 @@ footer {
   }
 }
 .home {
-  max-width: 400px;
   margin: 0 auto;
 }
 @media (min-width: 1000px) {
@@ -315,13 +313,14 @@ footer {
   }
 }
 .middle h2 {
+  width: 90%;
   background-color: rgba(24, 10, 175, 0.555);
   border-radius: 10px;
-  margin: 100px 50px 50px 50px;
+  margin: 100px auto 40px auto;
   font-size: 3rem;
   font-weight: 900;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
 }
 @media (min-width: 1000px) {
   .middle h2 {
@@ -329,8 +328,6 @@ footer {
     margin: 150px auto;
     text-align: center;
   }
-}
-@media (min-width: 1000px) {
 }
 .mid-intro .mid-intro-content {
   width: 100%;
@@ -359,11 +356,13 @@ footer {
   }
 }
 .mid-intro-imgs img {
-  width: 100%;
+  width: 350px;
+  height: 350px;
   display: block;
   border-radius: 20px;
-  margin: 20px auto;
+  margin: 50px auto;
   padding: 10px;
+  border-radius: 50%;
 }
 @media (min-width: 1000px) {
   .mid-intro-imgs img {
@@ -372,6 +371,22 @@ footer {
     border-radius: 50%;
     padding: 10px;
     margin: 100px 20px 0px 20px;
+  }
+}
+.mid-intro-imgs .banana {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .mid-intro-imgs .banana {
+    display: initial;
+  }
+}
+.mid-intro-imgs .apple {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .mid-intro-imgs .apple {
+    display: initial;
   }
 }
 .middle-paragraphs {
@@ -429,6 +444,7 @@ footer {
   font-family: 'Atma', cursive;
   margin: 20px auto;
   padding: 20px 5px;
+  max-width: 200px;
 }
 @media (min-width: 1000px) {
   .signup-options button {

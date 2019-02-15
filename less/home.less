@@ -1,6 +1,6 @@
 .home {
     // .min-view;
-    max-width: 400px;
+    // max-width: 600px;
     margin: 0 auto;
 
     @media @desktop {
@@ -11,17 +11,15 @@
 // Content after Header
 
 .middle {
-
-    // background-color: @background-color;
-    // width: 100%;
     h2 {
+        width: 90%;
         background-color: @headerbg-color;
         border-radius: 10px;
-        margin: 100px 50px 50px 50px;
+        margin: 100px auto 40px auto;
         font-size: 3rem;
         font-weight: 900;
         text-align: center;
-        padding: 20px;
+        padding: 15px;
 
         @media @desktop {
             width: 100%;
@@ -34,7 +32,7 @@
 .mid-intro {
 
     @media @desktop {
-        // display: flex;
+
     }
 
     .mid-intro-content {
@@ -64,14 +62,17 @@
     @media @desktop {
         display: flex;
         justify-content: center;
+
     }
 
     img {
-        width: 100%;
+        width: 350px;
+        height: 350px;
         display: block;
         border-radius: 20px;
-        margin: 20px auto;
+        margin: 50px auto;
         padding: 10px;
+        border-radius: 50%;
     }
 
     @media @desktop {
@@ -84,6 +85,23 @@
 
         }
 
+
+    }
+
+    .banana {
+        display: none;
+
+        @media @desktop {
+            display: initial;
+        }
+    }
+
+    .apple {
+        display: none;
+
+        @media @desktop {
+            display: initial;
+        }
     }
 
 }
@@ -144,6 +162,8 @@
         .custom-btn(100%, @orange-color, @font-color, 1.5rem);
         margin: 20px auto;
         padding: 20px 5px;
+        max-width: 200px;
+
 
         @media @desktop {
             .custom-btn(80%, @orange-color, @font-color, 1.7rem);
